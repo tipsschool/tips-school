@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="TIPSSchool Logo">
+  <h1> Teacher Login</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section>
+  <div class="card">
+    <h2>Teacher Login</h2>
+    <form id="teacherLoginForm">
+      <input type="text" placeholder="Username" id="teacherUser" required>
+      <input type="password" placeholder="Password" id="teacherPass" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TIPSSchool | All Rights Reserved</p>
+</footer>
+
+<script>
+document.getElementById('teacherLoginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const pass = document.getElementById('teacherPass').value;
+  if(pass === "affan4757"){
+    alert("Teacher Login Successful!");
+    window.location.href = "teacher_panel.html";
+  } else {
+    alert("Wrong Password");
+  }
+});
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="TIPSSchool Logo">
+  <h1> Teacher Panel</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section>
+  <div class="card">
+    <h2>Teacher Panel</h2>
+    <p>Welcome, teacher! (Demo panel, static site)</p>
+    <p>You can view results, manage class info, and post knowledge articles here.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TIPSSchool | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="TIPSSchool Logo">
+  <h1> Student Login</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section>
+  <div class="card">
+    <h2>Student Login</h2>
+    <form id="studentLoginForm">
+      <input type="text" placeholder="Username" id="studentUser" required>
+      <input type="password" placeholder="Password" id="studentPass" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TIPSSchool | All Rights Reserved</p>
+</footer>
+
+<script>
+document.getElementById('studentLoginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert("Student Login Successful! (Demo version)");
+  window.location.href = "student_dashboard.html";
+});
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="TIPSSchool Logo">
+  <h1> Student Dashboard</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section>
+  <div class="card">
+    <h2>Welcome, Student!</h2>
+    <p>Here you can view your results, class information, and knowledge tips.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TIPSSchool | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Results</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="TIPSSchool Logo">
+  <h1> Results</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section>
+  <div class="card">
+    <h2>Student Results</h2>
+    <table border="1" cellspacing="0" cellpadding="10">
+      <tr><th>Name</th><th>Class</th><th>Math</th><th>Science</th><th>English</th></tr>
+      <tr><td>Ali</td><td>5</td><td>95</td><td>90</td><td>92</td></tr>
+      <tr><td>Sara</td><td>5</td><td>88</td><td>85</td><td>90</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TIPSSchool | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="TIPSSchool Logo">
+  <h1> Classes</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section>
+  <div class="card">
+    <h2>Our Classes</h2>
+    <ul>
+      <li>Class 1 - Basics</li>
+      <li>Class 2 - Intermediate</li>
+      <li>Class 3 - Advanced</li>
+      <li>Class 4 - Expert</li>
+      <li>Class 5 - Mastery</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TIPSSchool | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Knowledge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.png" alt="TIPSSchool Logo">
+  <h1> Knowledge & Best Practices</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section>
+  <div class="card">
+    <h2>Tips for Students</h2>
+    <ul>
+      <li>Always stay curious and ask questions.</li>
+      <li>Practice regularly to master your subjects.</li>
+      <li>Organize your study time efficiently.</li>
+      <li>Read books beyond textbooks to enhance knowledge.</li>
+      <li>Maintain discipline and consistency in learning.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TIPSSchool | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+
